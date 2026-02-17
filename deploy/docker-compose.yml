@@ -1,0 +1,9 @@
+services:
+  gateway-service:
+    build:
+      context: ../services/gateway-service
+    environment:
+      APP_ENV: dev
+      HTTP_ADDR: :8080
+    ports:
+      - "8080:8080"
